@@ -1,0 +1,181 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  list-style: none;
+  text-decoration: none; 
+}
+
+body {
+  background-color: #ffffff; /* Blanco */
+  padding-top: 50px;
+  overflow-x: hidden;
+  font-family: 'Encode Sans SC', sans-serif;
+  font-weight: 500;
+}
+
+/* NAV AND LOGO */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ff914d; /* Naranja */
+  position: fixed;
+  top: 0;
+  width: 100%;
+  font-family: 'Encode Sans SC', sans-serif;
+  margin-bottom: 20px;
+}
+
+.header .logo {
+  color: #7ed957; /* Verde lima */
+  padding: 0 20px;
+  font-size: large;
+}
+
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.nav li {
+  padding: 10px;
+}
+
+.nav li a {
+  display: block;
+  padding: 10px;
+  color: #f7d986; /* Amarillo claro */
+  transition: background-color .2s;
+}
+
+.nav li a:hover {
+  background-color: #ff914d; /* Naranja para hover */
+}
+
+.active {
+  background-color: #ff914d; /* Naranja */
+}
+
+/* MAIN SECTION */
+
+.main-sec {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.profile {
+  padding: 20px;
+}
+
+.profile img {
+  height: 180px;
+  max-width: 180%;
+  border-radius: 50%;
+}
+
+.profile p {
+  color: #7ed957; /* Verde lima */
+  padding: 12px;
+  font-family: 'Encode Sans SC', sans-serif;
+  font-weight: 700;
+}
+
+.profile h1 {
+  color: #7ed957; /* Verde lima */
+  padding: 10px;
+  font-family: 'Encode Sans SC', sans-serif;
+  font-weight: 700;
+}
+
+/* LINKS SECTION */
+
+.links {
+  width: 100%;
+}
+
+.links li {
+  box-sizing: border-box;
+  padding: 0;
+  margin-bottom: 15px;
+  background-color: #ff914d; /* Naranja */
+  border: 2px solid #7ed957; /* Verde lima */
+}
+
+.links li a {
+  background-color: #f7d986; /* Amarillo claro */
+  color: #ff914d; /* Naranja */
+  padding: 15px 20px;
+  display: block;
+  transition: all .2s;
+}
+
+.links li a:hover {
+  background-color: #ff914d; /* Naranja */
+  color: #f7d986; /* Amarillo claro */
+}
+
+/* LINKS SECTION */
+
+.remove {
+  display: none;
+}
+
+.links-sec {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.links-sec h1 {
+  padding-top: 40px;
+  padding-bottom: 30px;
+  color: #f7d986; /* Amarillo claro */
+  font-family: 'Encode Sans SC', sans-serif;
+  font-size: 2rem;
+}
+
+/* RESPONSIVE SETTINGS */
+
+@media (max-width: 700px) {
+  body {
+    width: 100%;
+  }
+  .main-sec {
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .nav {
+    flex-wrap: nowrap;
+    text-align: center;
+  }
+}
+
+/* SUBSCRIBE FORM */
+
+.subscribe-form {
+  text-align: center;
+  margin-top: 50px;
+  color: #f7d986; /* Amarillo claro */
+}
+
+.subscribe-form h2 {
+  margin-bottom: 20px;
+}
+
+.subscribe-form input[type="email"] {
+  width: 300px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.subscribe-form button {
+  padding: 10px 20px;
+  background-color: #ff914d; /* Naranja */
+  color: #f7d986; /* Amarillo claro */
+  border: none;
+  cursor: pointer;
+}
